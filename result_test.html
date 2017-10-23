@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Results</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="java.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Result</h1>
+    <nav>
+      <ul>
+        <a href="home.html">Home</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="profile.html">Profile</a>
+      </ul>
+    </nav>
+    </header>
+  <main>
+    <!-- Put search bar below nav and above pic and deets 
+    for better UI design -->
+    <div id="pic_div">
+    <img src="book.png">
+      <!-- loads picture of book, some
+      small resolution 200x200-ish -->
+    </div>
+    <div id="info_div">
+      <ul>
+        <table id="book_result">
+          <tr><td class="subj">Title: </td><td class="deets">To Kill a Mockingbird</td></tr>
+          <tr><td class="subj">Author: </td><td class="deets">Harper Lee</td></tr>
+          <tr><td class="subj">Year Published: </td> <td class="deets">1960</td></tr>
+        </table>
+      <!-- Stuff goes above via jQuery 
+        Like:
+          Book name
+          Publish date
+          Publishing company
+          ISBN number
+        -->
+      </ul>
+  </div>
+  
+  <div id="sale_div">
+    <h2>Sellers</h2>
+    <ul>
+      <table id="sourcesTable">
+        
+      </table>
+      
+    </ul>
+  </div>
+  </main>
+  </div>
+</body>
+</html>
