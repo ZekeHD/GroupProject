@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Results";
+}
+<div id="results">
+    <div id="pic_div">
+        <img src="book.png">
+        <!-- loads picture of book, some
+        small resolution 200x200-ish -->
+    </div>
+    <div id="info_div">
+        <table id="book_result">
+            <tr><td class="subj">Title: </td><td class="deets">To Kill a Mockingbird</td></tr>
+            <tr><td class="subj">Author: </td><td class="deets">Harper Lee</td></tr>
+            <tr><td class="subj">Year Published: </td> <td class="deets">1960</td></tr>
+        </table>
+        <!-- Stuff goes above via jQuery
+          Like:
+            Book name
+            Publish date
+            Publishing company
+            ISBN number
+          -->
+        <div id="sale_div">
+            <h2>Sellers</h2>
+                <table id="sourcesTable"></table>
+        </div>
+    </div>
+</div>
