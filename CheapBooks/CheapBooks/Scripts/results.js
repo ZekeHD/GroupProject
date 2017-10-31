@@ -18,9 +18,8 @@
     }
 
     function generatePrice() {
-        var x = Math.random().toFixed(2);
-        x = x * 100;
-        return x;
+        var x = Math.ceil(Math.random() * 10000) / 100;
+        return x.toFixed(2);
     }
 
     var names_fake = names;
@@ -28,6 +27,6 @@
     for (var i = 0; i < names_real.length; i++) {
         var currentName = names_real[i];
         var currentPrice = generatePrice();
-        $('#sourcesTable').append('<tr><td>' + currentName + '</td><td>' + currentPrice + '</td></tr>');
+        $('#sourcesTable').append('<tr><td>' + currentName + ':</td><td>$' + currentPrice + '</td></tr>');
     }
 });
