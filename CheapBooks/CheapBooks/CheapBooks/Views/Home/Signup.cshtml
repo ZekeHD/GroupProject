@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Signup";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<div id="formstyle">
+
+    <h1>Sign Up</h1>
+
+    <form id="signup_form" method="post">
+        <input type="text" name="newFullName" id="newFullName" placeholder="Full Name" maxlength="50" required>
+        <input type="text" name="newUserEmail" id="newUserName" placeholder="Email" maxlength="50" required>
+        <input type="text" name="newUserName" id="newUserName" placeholder="User Name" maxlength="50" required>
+        <input type="text" name="newUserName" id="newUserName" placeholder="Password" maxlength="50" required>
+    </form>
+
+    <input type="submit" value="Create Account">
+    <input type="submit" value="Back to Login" onclick="location.href='login.html';">
+
+</div>

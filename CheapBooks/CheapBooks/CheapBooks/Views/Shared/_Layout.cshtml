@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cheap Books - @ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/Content/Site.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/Scripts/Java.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>
+                Cheap Books
+            </h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="~/Home/Index">Home</a></li>
+                <li><a href="~/Home/Login">Login</a></li>
+                <li><a href="~/Home/Signup">Signup</a></li>
+                <li><a href="~/Home/Results">Results</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="center">
+                @RenderBody()
+            </div>
+        </main>
+
+        <footer>
+            Copyright &copy; 2017 <br>
+        </footer>
+    </div>
+</body>
+</html>
